@@ -9,7 +9,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: ["https://chatter-snowy.vercel.app", "https://chatter-arghyadeep7.vercel.app", "https://chatter-git-master-arghyadeep7.vercel.app/"],
+    origin: "http://localhost:3000",
     methods: ["GET", "POST"],
   },
 });
@@ -35,6 +35,6 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(3001, () => {
+server.listen(8000, () => {
   console.log("SERVER RUNNING");
 });
