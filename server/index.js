@@ -9,7 +9,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "*",
+    origin: ["https://chatter-snowy.vercel.app", "https://chatter-arghyadeep7.vercel.app", "https://chatter-git-master-arghyadeep7.vercel.app/"],
     methods: ["GET", "POST"],
   },
 });
