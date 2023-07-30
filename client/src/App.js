@@ -24,17 +24,21 @@ function App() {
           <h3>Join A Chat</h3>
           <input
             type="text"
-            placeholder="John..."
+            placeholder="Enter your name..."
             onChange={(event) => {
               setUsername(event.target.value);
             }}
+
+            required
           />
           <input
             type="text"
-            placeholder="Room ID..."
+            placeholder="Enter your Room ID..."
             onChange={(event) => {
               setRoom(event.target.value);
             }}
+
+            required
           />
           <button onClick={joinRoom}>Join A Room</button>
         </div>
